@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vali Domeen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="steps">
+      <div class="step">Avaleht</div>
+      <div class="step active">1 Vali domeen</div>
+      <div class="step">2 Sisesta andmed</div>
+      <div class="step">3 Maksa ja kasuta</div>
+    </div>
+    <h1>Vali Domeenid</h1>
+    <form>
+      <div class="domain-input">
+        <label for="domain">https://</label>
+        <input type="text" id="domain" placeholder="yourname">
+        <select id="domain-ext">
+          <option value="ee">.ee</option>
+          <option value="com">.com</option>
+          <option value="net">.net</option>
+        </select>
+      </div>
+      <button type="button" class="btn-check">
+        Konrtollida
+      </button>
+      <div class="pricing">
+        <label for="duration">1 kuu</label>
+        <select id="duration">
+          <option value="1">1 kuu</option>
+          <option value="12">12 kuud</option>
+        </select>
+        <div class="price">5,99€</div>
+      </div>
+      <div class="total">
+        <span>Kogu hind:</span>
+        <span class="total-price">8,98€</span>
+      </div>
+      <button type="submit" class="btn">Edasi</button>
+    </form>
+  </div>
+</body>
+</html>
