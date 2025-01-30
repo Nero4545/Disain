@@ -6,7 +6,11 @@ header {
     padding: 20px;
     margin-bottom: 200px; 
 }
-  
+ul li {
+    list-style: none;
+    display: inline;
+}
+
 .openaipng {
     margin-left: 50px;
     margin-right: 50px;
@@ -40,7 +44,34 @@ footer {
     width: 100%;
     margin-top: 640px;
 }
-  
+.container{
+    max-width: 1140px;
+    margin: 0ch;
+}
+
+.cta-block {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.try-now-btn {
+    background-color: #e6e6e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.try-now-btn:hover {
+    background-color: #8a8a8a;
+}
+
 footer a {
     color: #ddd;
     text-decoration: none;
