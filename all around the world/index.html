@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maja</title>
-
+    <style>
+        /* Make the body take up the full screen with a background */
+        body {
+            margin: 0;
+            height: 100vh; /* Full height of the viewport */
+            background-color: rgb(0, 89, 119); /* Background color for the entire page */
+            display: flex;
+            justify-content: center; /* Center the SVG horizontally */
+            align-items: center; /* Center the SVG vertically */
+        }
+        svg {
+            width: 200px;  /* Fixed width for the SVG */
+            height: 300px; /* Fixed height for the SVG */
+        }
+    </style>
 </head>
 <body>
 <svg width="200" height="300" xmlns="http://www.w3.org/2000/svg">
+    
+    
 
-    <circle cx="100" cy="170" r="50" fill="blue" />
+    <defs>
+        <radialGradient id="myRadialGradient4"
+           fx="5%" fy="5%" r="65%"
+           spreadMethod="pad">
+          <stop offset="0%"   stop-color="blue" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#7597AE" stop-opacity="1" />
+        </radialGradient>
+    </defs>
+
+
+    <circle cx="100" cy="170" r="50" fill="blue"
+    style="fill:url(#myRadialGradient4);
+    stroke: #2b3ccc; stroke-width: 3;" />
+
     <!-- Chimney -->
     <rect x="80" y="1" width="15" height="60" fill="#808090" />
     
@@ -25,6 +54,7 @@
     
     <!-- Roof -->
     <polygon points="50,90 150,90 100,10" fill="#4a5568" />
+    
     
 
     
